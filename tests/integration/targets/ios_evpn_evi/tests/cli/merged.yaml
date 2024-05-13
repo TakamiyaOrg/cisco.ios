@@ -13,7 +13,7 @@
         config:
           - evi: 101
             replication_type: ingress
-            route_distinguisher: "1:1"
+            route_distinguisher: 1:1
             default_gateway:
               advertise:
                 enable: false

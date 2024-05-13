@@ -18,14 +18,14 @@
                 aces:
                   - sequence: 10
                     remarks:
-                      - "FIRST REMARK BEFORE SEQUENCE 10"
-                      - "============"
-                      - "REMARKS FOR SEQUENCE 10 NO FOLLOWING ACE"
+                      - FIRST REMARK BEFORE SEQUENCE 10
+                      - ============
+                      - REMARKS FOR SEQUENCE 10 NO FOLLOWING ACE
                   - sequence: 20
                     remarks:
-                      - "FIRST REMARK BEFORE SEQUENCE 20"
-                      - "============"
-                      - "ALLOW HOST FROM SEQUENCE 20"
+                      - FIRST REMARK BEFORE SEQUENCE 20
+                      - ============
+                      - ALLOW HOST FROM SEQUENCE 20
                     grant: permit
                     protocol: ip
                     source:
@@ -34,9 +34,9 @@
                       any: true
                   - sequence: 30
                     remarks:
-                      - "FIRST REMARK BEFORE SEQUENCE 30"
-                      - "============"
-                      - "ALLOW HOST FROM SEQUENCE 30"
+                      - FIRST REMARK BEFORE SEQUENCE 30
+                      - ============
+                      - ALLOW HOST FROM SEQUENCE 30
                     grant: permit
                     protocol: ip
                     source:
@@ -45,9 +45,9 @@
                       any: true
                   - sequence: 40
                     remarks:
-                      - "FIRST REMARK BEFORE SEQUENCE 40"
-                      - "============"
-                      - "ALLOW NEW HOST FROM SEQUENCE 40"
+                      - FIRST REMARK BEFORE SEQUENCE 40
+                      - ============
+                      - ALLOW NEW HOST FROM SEQUENCE 40
                     grant: permit
                     protocol: ip
                     source:
@@ -55,9 +55,9 @@
                     destination:
                       any: true
                   - remarks:
-                      - "Remark not specific to sequence"
-                      - "============"
-                      - "End Remarks"
+                      - Remark not specific to sequence
+                      - ============
+                      - End Remarks
         state: merged
 
     - ansible.builtin.assert:
@@ -78,9 +78,9 @@
                 aces:
                   - sequence: 10
                     remarks:
-                      - "FIRST REMARK BEFORE SEQUENCE 10"
-                      - "============"
-                      - "REMARKS FOR SEQUENCE 10 NO FOLLOWING ACE"
+                      - FIRST REMARK BEFORE SEQUENCE 10
+                      - ============
+                      - REMARKS FOR SEQUENCE 10 NO FOLLOWING ACE
                     grant: permit
                     protocol: ip
                     source:
@@ -89,9 +89,9 @@
                       any: true
                   - sequence: 20
                     remarks:
-                      - "FIRST REMARK BEFORE SEQUENCE 20"
-                      - "============"
-                      - "ALLOW HOST FROM SEQUENCE 20"
+                      - FIRST REMARK BEFORE SEQUENCE 20
+                      - ============
+                      - ALLOW HOST FROM SEQUENCE 20
                     grant: permit
                     protocol: ip
                     source:
@@ -100,9 +100,9 @@
                       any: true
                   - sequence: 30
                     remarks:
-                      - "FIRST REMARK BEFORE SEQUENCE 30"
-                      - "============"
-                      - "ALLOW HOST FROM SEQUENCE 30 updated"
+                      - FIRST REMARK BEFORE SEQUENCE 30
+                      - ============
+                      - ALLOW HOST FROM SEQUENCE 30 updated
                     grant: permit
                     protocol: ip
                     source:
@@ -111,9 +111,9 @@
                       any: true
                   - sequence: 40
                     remarks:
-                      - "FIRST REMARK BEFORE SEQUENCE 40"
-                      - "============"
-                      - "ALLOW NEW HOST FROM SEQUENCE 40"
+                      - FIRST REMARK BEFORE SEQUENCE 40
+                      - ============
+                      - ALLOW NEW HOST FROM SEQUENCE 40
                     grant: permit
                     protocol: ip
                     source:
@@ -121,9 +121,9 @@
                     destination:
                       any: true
                   - remarks:
-                      - "Remark not specific to sequence"
-                      - "============"
-                      - "End Remarks updated"
+                      - Remark not specific to sequence
+                      - ============
+                      - End Remarks updated
                       - "04j"
         state: overridden
 
