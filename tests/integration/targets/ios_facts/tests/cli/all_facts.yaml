@@ -21,7 +21,7 @@
 
 - name: Assert that free spacee is less than total space
   ansible.builtin.assert:
-    that: "my_var.value.spacetotal_kb > my_var.value.spacefree_kb"
+    that: my_var.value.spacetotal_kb > my_var.value.spacefree_kb
   loop: "{{ lookup('dict', result.ansible_facts.ansible_net_filesystems_info, wantlist=True) }}"
   loop_control:
     loop_var: my_var
